@@ -3,5 +3,5 @@ input_data:
     q2_dataset: '../data/raw/judicial_autonomy_q2_dataset_09122024.csv'
 
 output_data:
-    q1_dataset: '../data/clean/judicial_autonomy_q1_dataset_09122024.csv'
-    q2_dataset: '../data/clean/judicial_autonomy_q2_dataset_09122024.csv'
+    q1_dataset: '../data/clean/judicial_autonomy_q1_clean.csv'
+    q2_dataset: '../data/clean/judicial_autonomy_q2_clean.csv'
