@@ -17,10 +17,19 @@ Wednesday + Thursday, 11./12.12.2024
 - compared various options of micro-indicator mean:
   1) filling in NAs with mode
   2) not filling in NAs with mode
-  3) recoded all fuzzy values into [0,1] + filled in NAs with mode 
+  3) recoded all fuzzy values into [0,1] + filled in NAs with mode
+
+Friday, 13.12.2024
+- finished function to merge micro-indicators to 5 macro-indicators
+- created macro-indicators & overall index (by group mean)
+- organized notebook
+  
 
 NEXT STEP:
-- create macro-indicators -> decide how to aggregate data (on median or mean?)
+- Prepare EDA for JA index
+- Describe functions properly + update functions.py
+
+### 
 
 NICE TO HAVE:
 - create documentation for missing values + recoding options (incl. visualizations?)
