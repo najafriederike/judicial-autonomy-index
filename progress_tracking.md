@@ -23,10 +23,22 @@ Friday, 13.12.2024
 - finished function to merge micro-indicators to 5 macro-indicators
 - created macro-indicators & overall index (by group mean)
 - organized notebook
-  
 
+Monday, 16.12.2024
+- created new notebook: downloaded and cleaned V-Dem Episodes of Regime Transformation Dataset
+- saved clean version to clean data
+- created new notebook: merged Judicial Autonomy and V-Dem data
+- saved clean versions to clean data
+- created new notebook: EDA
+- finished univariate analysis: V-Dem ERT - Regime Type (categorical)
+
+  
 NEXT STEP:
-- Prepare EDA for JA index
+- univariate analysis: Judicial Autonomy Index (numeric)
+- univariate analysis: V-Dem EDI score (numeric)
+- bivariate analysis: Judicial Autonomy overall index (numeric) vs. V-Dem EDI score (numeric)
+- bivariate analysis: Judicial Autonomy macro-indicators vs. V-Dem EDI score (numeric)
+
 - Describe functions properly + update functions.py
 
 ### 

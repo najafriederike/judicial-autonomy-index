@@ -1,14 +1,30 @@
 input_data:
+    
+    # Judicial Autonomy dataset
     q1_dataset: '../data/raw/judicial_autonomy_q1_dataset_09122024.csv'
     q2_dataset: '../data/raw/judicial_autonomy_q2_dataset_09122024.csv'
 
+    # V-Dem Episodes of Regime Transformation dataset (v14)
+    vdem_episodes_of_regime_transformation_dataset: '../data/raw/vdem_ert_v14.csv'
+
 output_data:
+    
+    # Judicial Autonomy dataset
     q1_dataset: '../data/clean/judicial_autonomy_q1_clean.csv'
     q2_dataset: '../data/clean/judicial_autonomy_q2_clean.csv'
 
+    # Judicial Autonomy Index subsets
     q1_output_index_macro: '../data/clean/judicial_autonomy_q1_index_macro.csv'
     q1_output_index_macro_micro: '../data/clean/judicial_autonomy_q1_index_macro_micro.csv'
     q1_output_index_macro_micro_add_info: '../data/clean/judicial_autonomy_q1_index_macro_micro_add_info.csv'
+
+    # V-Dem Episodes of Regime Transformation dataset
+    vdem_episodes_of_regime_transformation_dataset_clean: '../data/clean/vdem_ert_dataset_clean.csv'
+
+    # Merged datasets
+    q1_output_index_macro_vdem: '../data/clean/judicial_autonomy_q1_index_macro_vdem.csv'
+    q1_output_index_macro_micro_vdem: '../data/clean/judicial_autonomy_q1_index_macro_micro_vdem.csv'
+
 
     # q1_appointment_actors_dataset: '../data/clean/q1_appointment_actors_clean.csv'
     # q1_appointment_criteria_dataset: '../data/clean/q1_appointment_criteria_clean.csv'
