@@ -54,7 +54,9 @@ Can the quality of de jure judicial independence predict the future of political
       - Drop all columns except from core variables
 
 2. **Index building**
+
 /figures/index_building_treechart.png
+
    - Micro Indicators:
      - Created subsets for micro indicators by grouping question items (3 or 4 items per indicator)
      - Filled in missing values on micro indicator level (using group median, unless all items would be NA, then replace all with 0)
