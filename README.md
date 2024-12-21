@@ -1,8 +1,8 @@
-## Iustitia’s Oracle: \
+## Iustitia’s Oracle:
 ## Forecasting Political Regime Types by Measuring Judicial Independence
 
 ## Project Overview
-This project explores whether the quality of de jure judicial independence predicts the future of political regime types using machine learning models. The aim of this project is twofold:
+This project explores whether the quality of (_de jure_) judicial independence predicts the future of political regime types using machine learning models. The aim of this project is twofold:
 1. Create an index: To develop an index to measure the level of judicial independence based on 5 macro and 15 micro indicators.
 2. Machine learning model: Build a machine learning model to predict future political regime types and levels of democracy based on levels of judicial independence, with the aim of identifying patterns and correlations that link judicial independence to trends in political regimes.
 
@@ -11,10 +11,10 @@ This project explores whether the quality of de jure judicial independence predi
 
 - _data_: Contains raw and cleaned datasets in csv format 
 - _figures_: Contains all created visualizations
-- _notebooks_: Contains Jupyter notebooks with code for:
+- _notebooks_: Contains Jupyter notebooks with python code for:
   - Data cleaning for V-Dem Dataset
   - Data cleaning Judicial Autonomy Dataset
-  - Merging both datasets,
+  - Merging both datasets
   - Building Judicial Autonomy Index, incl. visualizations
   - Model training K-Nearest Neighbors, incl. visualizations
   - Model training RandomForest, incl. visualizations
@@ -25,46 +25,46 @@ This project explores whether the quality of de jure judicial independence predi
 - _README file_: Project description
 
 ## Datasets
-1. Varieties of Democracy (V-Dem): [Episodes of Regime Transformation (ERT) dataset] (https://github.com/vdeminstitute/ERT/tree/master)
+1. Varieties of Democracy (V-Dem): [Episodes of Regime Transformation (ERT) dataset](https://github.com/vdeminstitute/ERT/tree/master)
    - Variables used:
      - Electoral democracy index (v2x polyarchy)
      - Regimes of the World (v2x regime)
      - Regime type (reg type)
 
 2. Judicial Autonomy Dataset (unpublished)
-   - 40 European countries over 23 years (2000-2022)
-   - Coded characteristics of national judicial system 
-   - Approx.. 50 question items covering first instance, appeal and highest courts (Questionnaire 1)
+   - 40 European countries for the period 2000-2022
+   - Coded characteristics of each national judicial system 
+   - Approx.. 50 question items covering first instance, appeal and highest courts
 
 ## Analysis Approach
 
-1. **Data Cleaning**
-   - Judicial Autonomy Dataset:
+**1. Data Cleaning**
+   - **Judicial Autonomy Dataset**:
      - Cleaned countries (dropped countries with low data quality and renamed country names where necessary) 
      - Filtered out all columns with >20% of missing values
      - Created two clean datasets:
        - containing fuzzy values
        - containing binary values (recoded values as: if value <= 0.5 then 0 else 1)
-  
-    - Varieties of Democracy (V-Dem) Dataset:
+
+   - **Varieties of Democracy (V-Dem) Dataset**:
       - Filtered for defined countries and for years 2000-2022 to match Judicial Autonomy dataset
       - Dropped all columns except from core variables (i.e. v2x_polyarchy, v2x_regime, reg_type)
 
-2. **Index building**
+**2. Index building**
 
 /figures/index_building_treechart.png
 
-   - Micro Indicators:
-     - Created subsets for micro indicators by grouping question items (3 or 4 items per indicator)
-     - Filled in missing values on micro indicator level (using group median, unless all items would be NA, then replace all with 0)
+   - **Micro Indicators**:
+     - Created micro indicator subsets by grouping question items (3 or 4 items per indicator)
+     - Filled in missing values at micro indicator level (using group median unless all items were NA, then replaced with 0)
      - Aggregated micro indicator scores by calculating group mean
-   - Macro Indicators:
-     - Created subsets for macro indicators by grouping micro indicators (3 per indicator)
+   - **Macro Indicators**:
+     - Macro indicator subsets created by grouping micro indicators (3 per indicator)
      - Aggregated macro indicator scores by calculating group mean
-   - Overall Index:
+   - **Overall Index**:
      - Aggregated overall index score by calculating group mean
 
-3. Machine Learning Model Building:
+**3. Machine Learning Model Building**
    
    - **K-Nearest Neighbors**
      - Trained several classification and regression models
@@ -91,16 +91,17 @@ This project explores whether the quality of de jure judicial independence predi
          
      - Visualizations created: Confusion Matrix, Scatterplot for True and Predicted Values, and Barplot for Features Importance.
 
-## Key Findings & Implications
+## Conclusion
 
-- Can the quality of de jure judicial independence predict the future of political regime types?
+- **Key Findings**:
   - Weak but recognizable correlation between the quality of judicial independence and the overall quality of democracy.
   - Judicial independence can only be one crucial pillar among many.
   - Challenges in recognizing the subtle erosion of democracy.
 
-- We cannot predict the (political) future, but we can prepare ourselves by:
-  - Identifying critical elements of judicial systems
-  - Identifying potential threats to judicial independence and democracy
-  - Monitoring incremental change
-  - Refining measures and approaches to capture "middle-ground" cases
+- **Implications**: 
+  - We cannot predict the (political) future, but we can prepare ourselves by:
+    - Identifying critical elements of judicial systems
+    - Identifying potential threats to judicial independence and democracy
+    - Monitoring incremental change
+    - Refining measures and approaches to capture "middle-ground" cases
 
