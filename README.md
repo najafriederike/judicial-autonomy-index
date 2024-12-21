@@ -1,5 +1,4 @@
-# _Iustitia’s Oracle:_
-# _Forecasting Political Regime Types by Measuring Judicial Independence_
+# _Iustitia’s Oracle: Forecasting Political Regime Types by Measuring Judicial Independence_
 
 ## Project Overview
 This project explores whether the quality of (_de jure_) judicial independence predicts the future of political regime types using machine learning models. The aim of this project is twofold:
