@@ -1,30 +1,28 @@
-## Iustitia’s Oracle:\
+## Iustitia’s Oracle: \
 ## Forecasting Political Regime Types by Measuring Judicial Independence
 
 ## Project Overview
-**Intro:**
-
-**Key Question:**
-Can the quality of de jure judicial independence predict the future of political regime types?
-
-**Goal:**
-- Create an Index: Develop an index to measure the level of judicial independence, based on 5 macro-indicators and 15 micro-indicators.
-- Machine Learning Model: Build a machine learning model to predict future political regime types and levels of democracy based on judicial independence levels, aiming to identify patterns and correlations that link judicial independence to trends in political regimes.
+This project explores whether the quality of de jure judicial independence predicts the future of political regime types using machine learning models. The aim of this project is twofold:
+1. Create an index: To develop an index to measure the level of judicial independence based on 5 macro and 15 micro indicators.
+2. Machine learning model: Build a machine learning model to predict future political regime types and levels of democracy based on levels of judicial independence, with the aim of identifying patterns and correlations that link judicial independence to trends in political regimes.
 
 ## Project Structure
 **How to explore this repository:**
 
-- data: contains raw and cleaned datasets in csv format 
-- figures: contains all created visualizations
-- notebooks: contains Jupyter notebooks with code for:
-  - data cleaning for V-Dem Dataset
-  - data cleaning Judicial Autonomy Dataset
-  - merging both datasets,
-  - building Judicial Autonomy Index, incl. visualizations
-  - model training K-Nearest Neighbors, incl. visualizations
-  - model training RandomForest, incl. visualizations
-- py-files: containing main functions used
-- slides: contains presentation slides for project overview
+- _data_: Contains raw and cleaned datasets in csv format 
+- _figures_: Contains all created visualizations
+- _notebooks_: Contains Jupyter notebooks with code for:
+  - Data cleaning for V-Dem Dataset
+  - Data cleaning Judicial Autonomy Dataset
+  - Merging both datasets,
+  - Building Judicial Autonomy Index, incl. visualizations
+  - Model training K-Nearest Neighbors, incl. visualizations
+  - Model training RandomForest, incl. visualizations
+- _py-files_: Contains main functions used
+- _slides_: Contains presentation slides for project overview
+- _yaml file_: Contains references for input and output data
+- _toml file_: Contains information about packages and other dependencies used
+- _README file_: Project description
 
 ## Datasets
 1. Varieties of Democracy (V-Dem): [Episodes of Regime Transformation (ERT) dataset] (https://github.com/vdeminstitute/ERT/tree/master)
@@ -42,16 +40,15 @@ Can the quality of de jure judicial independence predict the future of political
 
 1. **Data Cleaning**
    - Judicial Autonomy Dataset:
-     - Clean countries (drop countries with low data quality) 
-     - Rename country names where necessary
-     - Filter out all columns with >20% of missing values
-     - Create two clean datasets:
+     - Cleaned countries (dropped countries with low data quality and renamed country names where necessary) 
+     - Filtered out all columns with >20% of missing values
+     - Created two clean datasets:
        - containing fuzzy values
-       - recoding fuzzy values into binary values (if value <= 0.5 then 0 else 1)
-
-    - Data Cleaning Varieties of Democracy (V-Dem) Dataset:
-      - Filter for defined countries and for years 2000-2022 to match judicial autonomy dataset
-      - Drop all columns except from core variables
+       - containing binary values (recoded values as: if value <= 0.5 then 0 else 1)
+  
+    - Varieties of Democracy (V-Dem) Dataset:
+      - Filtered for defined countries and for years 2000-2022 to match Judicial Autonomy dataset
+      - Dropped all columns except from core variables (i.e. v2x_polyarchy, v2x_regime, reg_type)
 
 2. **Index building**
 
@@ -68,21 +65,35 @@ Can the quality of de jure judicial independence predict the future of political
      - Aggregated overall index score by calculating group mean
 
 3. Machine Learning Model Building:
-   - K-Nearest Neighbors
-     - Classification and Regression Models
+   
+   - **K-Nearest Neighbors**
+     - Trained several classification and regression models
      - Manual feature selection, feature scaling, oversampling
      - Used to explore best feature-target combinations (accuracy & R2 > 90%)
      - Visualizations: Correlation Heatmap
        
-   - Random Forest
-     - Classification and Regression Models
+   - **Random Forest**
      - Based on pre-selected feature-target combinations
-     - Identify feature importances
-     - Visualizations: Confusion Matrix, Scatterplot for True and Predicted Values, and Barplot for Features Importance
+
+     - Classification Models:
+       - Results: overall accuracy of 93%.
+       - Feature importances (top 3):
+         - Competences of judicial self-governance bodies
+         - Judges' immunity
+         - Conflict of interest, obligation of recusal, evaluation procedures
+
+     - Regression Models:
+       - Results: R2 score of 96%.
+       - Feature importances (top 3):
+         - Judges' tenure or term in office
+         - Conflict of interest, obligation of recusal, evaluation procedures
+         - Actors involved in disciplinary proceedings
+         
+     - Visualizations created: Confusion Matrix, Scatterplot for True and Predicted Values, and Barplot for Features Importance.
 
 ## Key Findings & Implications
 
-- Can written law predict the quality of democracy?
+- Can the quality of de jure judicial independence predict the future of political regime types?
   - Weak but recognizable correlation between the quality of judicial independence and the overall quality of democracy.
   - Judicial independence can only be one crucial pillar among many.
   - Challenges in recognizing the subtle erosion of democracy.
