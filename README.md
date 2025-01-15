@@ -13,8 +13,9 @@ This project explores whether the quality of (_de jure_) judicial independence p
 - _notebooks_: Contains Jupyter notebooks with python code for:
   - Data cleaning for V-Dem Dataset
   - Data cleaning Judicial Autonomy Dataset
+  - Building Judicial Autonomy Index
   - Merging both datasets
-  - Building Judicial Autonomy Index, incl. visualizations
+  - Exploratory Data Analysis (EDA)
   - Model training K-Nearest Neighbors, incl. visualizations
   - Model training RandomForest, incl. visualizations
 - _py-files_: Contains main functions used
@@ -26,9 +27,9 @@ This project explores whether the quality of (_de jure_) judicial independence p
 ## Datasets
 1. Varieties of Democracy (V-Dem): [Episodes of Regime Transformation (ERT) dataset](https://github.com/vdeminstitute/ERT/tree/master)
    - Variables used:
-     - Electoral democracy index (v2x polyarchy)
-     - Regimes of the World (v2x regime)
-     - Regime type (reg type)
+     - Electoral democracy index (v2x_polyarchy)
+     - Regimes of the World (v2x_regime)
+     - Regime type (reg_type)
 
 2. Judicial Autonomy Dataset (unpublished)
    - 40 European countries for the period 2000-2022
@@ -43,7 +44,7 @@ This project explores whether the quality of (_de jure_) judicial independence p
      - Filtered out all columns with >20% of missing values
      - Created two clean datasets:
        - containing fuzzy values
-       - containing binary values (recoded values as: if value <= 0.5 then 0 else 1)
+       - containing binary values (recoded values as: 0.0 if value <= 0.5 else 1.0)
 
    - **Varieties of Democracy (V-Dem) Dataset**:
       - Filtered for defined countries and for years 2000-2022 to match Judicial Autonomy dataset
