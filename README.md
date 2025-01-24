@@ -1,9 +1,9 @@
 # _Iustitia’s Oracle: Forecasting Political Regime Types by Measuring Judicial Independence_
 
 ## Project Overview
-This project explores whether the quality of (_de jure_) judicial independence predicts the future of political regime types using machine learning models. The aim of this project is twofold:
+This project explores whether the quality of (_de jure_) judicial independence can predict the future of political regime types using machine learning models. The aim of this project is twofold:
 1. Create an index: To develop an index to measure the level of judicial independence based on 5 macro and 15 micro indicators.
-2. Machine learning model: Build a machine learning model to predict future political regime types and levels of democracy based on levels of judicial independence, with the aim of identifying patterns and correlations that link judicial independence to trends in political regimes.
+2. Machine learning (ML) model: Build a machine learning model to predict future political regime types and levels of democracy based on levels of judicial independence, with the aim of identifying patterns and correlations that link judicial independence to trends in political regimes.
 
 ## Project Structure
 **How to explore this repository:**
@@ -12,13 +12,13 @@ This project explores whether the quality of (_de jure_) judicial independence p
 - _figures_: Contains all created visualizations
 - _notebooks_: Contains Jupyter notebooks with python code for:
   - Data cleaning for V-Dem Dataset
-  - Data cleaning Judicial Autonomy Dataset
-  - Building Judicial Autonomy Index
+  - Data cleaning for Judicial Autonomy Dataset
+  - Building the Judicial Autonomy Index
   - Merging both datasets
-  - Exploratory Data Analysis (EDA)
-  - Model training K-Nearest Neighbors, incl. visualizations
-  - Model training RandomForest, incl. visualizations
-  - Appendix: Exploring missing values in Judicial Autonomy Dataset
+  - Exploratory Data Analysis (EDA), , incl. visualizations
+  - ML Model training K-Nearest Neighbors, incl. visualizations
+  - ML Model training RandomForest, incl. visualizations
+  - Appendix: Exploring missing values in Judicial Autonomy Dataset, incl. visualizations
 - _py-files_: Contains main functions used
 - _slides_: Contains presentation slides for project overview
 - _yaml file_: Contains references for input and output data
@@ -113,7 +113,7 @@ This project explores whether the quality of (_de jure_) judicial independence p
   - Actors involved in appointment procedures of court presidents<br/> _('q1_micro_appointment_court_presidents_ind_measure')_
   - Veto powers during appointment procedures<br/> _('q1_micro_appointment_veto_ind_measure')_
 
-- **Selection Criteria**: _('q1_macro_selection_criteria_ind_measure')_
+- **Selection Criteria** _('q1_macro_selection_criteria_ind_measure')_
   - Selection and appointment criteria for judges - predetermined by law<br/> _('q1_micro_selection_predetermined_law_ind_measure')_
   - Selection and appointment criteria for judges - in accordance to international standards<br/> _('q1_micro_selection_intl_standards_ind_measure')_
   - Transparency and mechanisms for appeal in appointment procedures of judges<br/> _('q1_micro_transparency_appeal_ind_measure')_
