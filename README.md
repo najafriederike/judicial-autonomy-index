@@ -53,8 +53,6 @@ This project explores whether the quality of (_de jure_) judicial independence c
 
 **2. Index building**
 
-/figures/index_building_treechart.png
-
    - **Micro Indicators**:
      - Created micro indicator subsets by grouping question items (3 or 4 items per indicator)
      - Filled in missing values at micro indicator level (using group median unless all items were NA, then replaced with 0)
