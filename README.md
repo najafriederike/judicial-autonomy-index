@@ -18,6 +18,7 @@ This project explores whether the quality of (_de jure_) judicial independence p
   - Exploratory Data Analysis (EDA)
   - Model training K-Nearest Neighbors, incl. visualizations
   - Model training RandomForest, incl. visualizations
+  - Appendix: Exploring missing values in Judicial Autonomy Dataset
 - _py-files_: Contains main functions used
 - _slides_: Contains presentation slides for project overview
 - _yaml file_: Contains references for input and output data
@@ -104,4 +105,17 @@ This project explores whether the quality of (_de jure_) judicial independence p
     - Identifying potential threats to judicial independence and democracy
     - Monitoring incremental change
     - Refining measures and approaches to capture "middle-ground" cases
+
+## Appendix / Annotation
+
+- Full variable names:
+- **Appointment Procedures** ('q1_macro_appointment_procedures_ind_measure')
+  - Actors involved in appointment procedures of judges ('q1_micro_appointment_judges_ind_measure')
+    Actors involved in appointment procedures of court presidents ('q1_micro_appointment_court_presidents_ind_measure')
+    Veto powers during appointment procedures ('q1_micro_appointment_veto_ind_measure')
+
+- **Selection Criteria**: q1_macro_selection_criteria_ind_measure
+  - Selection and appointment criteria for judges - predetermined by law: q1_micro_selection_predetermined_law_ind_measure
+  - Selection and appointment criteria for judges - in accordance to international standards: q1_micro_selection_intl_standards_ind_measure)
+  - Transparency and mechanisms for appeal in appointment procedures of judges: q1_micro_transparency_appeal_ind_measure
 
