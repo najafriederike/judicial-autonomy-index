@@ -106,15 +106,29 @@ This project explores whether the quality of (_de jure_) judicial independence p
     - Monitoring incremental change
     - Refining measures and approaches to capture "middle-ground" cases
 
-## Appendix / Full variable names:
+## Appendix (List of full variable names):
  
 - **Appointment Procedures** _('q1_macro_appointment_procedures_ind_measure')_
   - Actors involved in appointment procedures of judges<br/> _('q1_micro_appointment_judges_ind_measure')_
   - Actors involved in appointment procedures of court presidents<br/> _('q1_micro_appointment_court_presidents_ind_measure')_
   - Veto powers during appointment procedures<br/> _('q1_micro_appointment_veto_ind_measure')_
 
-- **Selection Criteria**: (_'q1_macro_selection_criteria_ind_measure'_)
-  - Selection and appointment criteria for judges - predetermined by law<br/> (_'q1_micro_selection_predetermined_law_ind_measure'_)
-  - Selection and appointment criteria for judges - in accordance to international standards<br/> (_'q1_micro_selection_intl_standards_ind_measure'_)
-  - Transparency and mechanisms for appeal in appointment procedures of judges<br/> (_'q1_micro_transparency_appeal_ind_measure'_)
+- **Selection Criteria**: _('q1_macro_selection_criteria_ind_measure')_
+  - Selection and appointment criteria for judges - predetermined by law<br/> _('q1_micro_selection_predetermined_law_ind_measure')_
+  - Selection and appointment criteria for judges - in accordance to international standards<br/> _('q1_micro_selection_intl_standards_ind_measure')_
+  - Transparency and mechanisms for appeal in appointment procedures of judges<br/> _('q1_micro_transparency_appeal_ind_measure')_
 
+- **Professional Rights** _('q1_macro_professional_rights_ind_measure')_
+  - Tenure and term in office of judges<br/> _('q1_micro_judge_tenure_ind_measure')_
+  - Immunity and non-transferability of judges<br/> _('q1_micro_judge_immunity_ind_measure')_
+  - Salaries and bonuses of judges<br/> _('q1_micro_judge_salary_ind_measure')_
+
+- **Professional Obligations** _('q1_macro_professional_obligations_ind_measure')_
+  - Disciplinary proceedings against judges - predetermined by law<br/> _('q1_micro_disciplinary_proceedings_law_ind_measure')_
+  - Disciplinary proceedings against judges - actors involved<br/> _('q1_micro_disciplinary_proceedings_actors_ind_measure')_
+  - Conflict of interest, recusal from cases and evaluation of judges<br/> _('q1_micro_conflict_recusal_evaluation_ind_measure')_
+
+- **Judicial Administration** _('q1_macro_judicial_administration_ind_measure')_
+  - Composition of the judicial self-governing bodies<br/> _('q1_micro_judicial_self_governance_bodies_ind_measure')_
+  - Competences and functioning of the judicial self-governing bodies<br/> _('q1_micro_judicial_self_governance_competences_ind_measure')_
+  - Administration, functioning and budget of courts<br/> _('q1_micro_courts_administration_ind_measure')_
