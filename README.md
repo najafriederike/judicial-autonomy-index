@@ -109,12 +109,12 @@ This project explores whether the quality of (_de jure_) judicial independence p
 ## Appendix / Full variable names:
  
 - **Appointment Procedures** _('q1_macro_appointment_procedures_ind_measure')_
-  - Actors involved in appointment procedures of judges\ _('q1_micro_appointment_judges_ind_measure')_
-  - Actors involved in appointment procedures of court presidents\ _('q1_micro_appointment_court_presidents_ind_measure')_
-  - Veto powers during appointment procedures<br\> _('q1_micro_appointment_veto_ind_measure')_
+  - Actors involved in appointment procedures of judges<br/> _('q1_micro_appointment_judges_ind_measure')_
+  - Actors involved in appointment procedures of court presidents<br/> _('q1_micro_appointment_court_presidents_ind_measure')_
+  - Veto powers during appointment procedures<br/> _('q1_micro_appointment_veto_ind_measure')_
 
 - **Selection Criteria**: (_'q1_macro_selection_criteria_ind_measure'_)
-  - Selection and appointment criteria for judges - predetermined by law (_'q1_micro_selection_predetermined_law_ind_measure'_)
-  - Selection and appointment criteria for judges - in accordance to international standards (_'q1_micro_selection_intl_standards_ind_measure'_)
-  - Transparency and mechanisms for appeal in appointment procedures of judges (_'q1_micro_transparency_appeal_ind_measure'_)
+  - Selection and appointment criteria for judges - predetermined by law<br/> (_'q1_micro_selection_predetermined_law_ind_measure'_)
+  - Selection and appointment criteria for judges - in accordance to international standards<br/> (_'q1_micro_selection_intl_standards_ind_measure'_)
+  - Transparency and mechanisms for appeal in appointment procedures of judges<br/> (_'q1_micro_transparency_appeal_ind_measure'_)
 
