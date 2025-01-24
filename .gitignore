@@ -2,6 +2,8 @@
 
 # Raw datasets
 data/raw/judicial_autonomy_q1_dataset_09122024
+data/raw/judicial_autonomy_q1_dataset_09122024.csv
+data/raw/judicial_autonomy_q2_dataset_09122024.csv
 
 # Clean datasets
 data/clean/judicial_autonomy_q1_clean.csv
