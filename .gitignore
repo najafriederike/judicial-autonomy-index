@@ -1,0 +1,15 @@
+*.log
+
+# Raw datasets
+data/raw/judicial_autonomy_q1_dataset_09122024
+
+# Clean datasets
+data/clean/judicial_autonomy_q1_clean.csv
+data/clean/judicial_autonomy_q1_clean_binary.csv
+data/clean/judicial_autonomy_q1_index_macro.csv
+data/clean/judicial_autonomy_q1_index_macro_micro.csv
+data/clean/judicial_autonomy_q1_index_macro_micro_add_info.csv
+data/clean/judicial_autonomy_q1_index_macro_micro_vdem.csv
+data/clean/judicial_autonomy_q1_index_macro_vdem.csv
+
+secrets.json
