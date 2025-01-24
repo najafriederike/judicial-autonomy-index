@@ -11,5 +11,6 @@ data/clean/judicial_autonomy_q1_index_macro_micro.csv
 data/clean/judicial_autonomy_q1_index_macro_micro_add_info.csv
 data/clean/judicial_autonomy_q1_index_macro_micro_vdem.csv
 data/clean/judicial_autonomy_q1_index_macro_vdem.csv
+data/clean/.ipynb_checkpoints
 
 secrets.json
