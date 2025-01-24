@@ -62,6 +62,7 @@ This project explores whether the quality of (_de jure_) judicial independence c
      - Aggregated macro indicator scores by calculating group mean
    - **Overall Index**:
      - Aggregated overall index score by calculating group mean
+     - [Tableau Map Judicial Autonomy Index](https://public.tableau.com/app/profile/friederike.augustin/viz/Ironhack_Final_Project/Index_Map_23Years_vertical)
 
 **3. Machine Learning Model Building**
    
